@@ -24,60 +24,60 @@ function App() {
 
   return (
     <div className="App">
-        <center><h1 class="heading">Employee Registration Form</h1></center>
-      
-      <form id="empform" onSubmit={getFormData}>
-        <div class="form-row">
+        <center><h1 className="heading">Employee Registration Form</h1></center>
+      <div className="empform">
+      <form onSubmit={getFormData}>
+        <div>
           <div class="form-group col-md-6">
-            <label>First Name
-              <input type="text" class="form-control" value={fname} name="first_name" required onChange={(e)=>setFname(e.target.value)}></input>
+            <label className="emplabel">First Name
+              <input type="text" className="form-control" value={fname} name="first_name" required onChange={(e)=>setFname(e.target.value)}></input>
             </label>
           </div>
           <br/>
           <div class="form-group col-md-6">
-            <label>Last Name
-              <input type="text" class="form-control" value={lname} name="last_name" required onChange={(e)=>setLname(e.target.value)}></input>
+            <label className="emplabel">Last Name
+              <input type="text" className="form-control" value={lname} name="last_name" required onChange={(e)=>setLname(e.target.value)}></input>
             </label>
           </div>
           <div class="form-group col-md-6">
-            <label>Address
-              <textarea name="address" class="form-control" value={address} required onChange={(e)=>setAddress(e.target.value)}></textarea>
+            <label className="emplabel">Address
+              <textarea name="address" className="form-control" value={address} required onChange={(e)=>setAddress(e.target.value)}></textarea>
             </label>
           </div>
           <br></br>
-          <div class="form-group col-md-6">
-            <label>Phone No.
-              <input type="text" class="form-control" value={phone} name="phone" required onChange={(e)=>setPhone(e.target.value)}></input>
+          <div className="form-group col-md-6">
+            <label className="emplabel">Phone No.
+              <input type="text" className="form-control" value={phone} name="phone" required onChange={(e)=>setPhone(e.target.value)}></input>
             </label>
             </div>
             <br />
             <div class="form-group col-md-6">
-              <label>Role
-                <select name="role" class="form-select" value={role} required onChange={(e)=>setRole(e.target.value)}>
-                <option selected></option>
-                  <option>Admin</option>
-                  <option>Manager</option>
-                  <option>Team_Member</option>
-                  <option>HR</option>
-                  <option>Sales</option>
+              <label className="emplabel">Role
+                <select name="role" className="form-select" value={role} required onChange={(e)=>setRole(e.target.value)}>
+                <option value="" disabled selected>Select a role</option>
+                <option value="Admin">Admin</option>
+                <option value="Manager">Manager</option>
+                <option value="Team_Member">Team Member</option>
+                <option value="HR">HR</option>
+                <option value="Sales">Sales</option>
                 </select>
               </label>
               </div>
             <br></br>
             <div class="form-group col-md-6">
-              <label>Password
-                <input type="password" class="form-control" value={password} required name="password" onChange={(e)=>setPassword(e.target.value)}></input>
+              <label className="emplabel">Password
+                <input type="password" className="form-control" value={password} required name="password" onChange={(e)=>setPassword(e.target.value)}></input>
               </label>
               </div>
               <br></br>
               <center>
               <div class="form-group col-md-6">
-                <button class="btn btn-primary" type="submit">Submit</button>
+                <button className="btn btn-primary" type="submit">Submit</button>
               </div>
               </center>
           </div>
       </form>  
-      
+      </div>
     </div>
     
   );

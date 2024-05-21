@@ -7,19 +7,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(231, 240, 237);
 }
-form{
+.empform{
+  border: 1px solid rgb(51, 44, 99);
   margin-top: 30px;
   margin-left: 400px;
   margin-right: 400px;
-  border: 1px solid rgb(51, 44, 99);
+  border-radius: 21px;
   padding: 50px; 
   background-color:rgb(168, 211, 239);
 }
 .heading{
   color: rgb(51, 44, 99);
 }
-
-label {
+.emplabel {
   display: block;
   font-size: 25px;
 }
@@ -28,18 +28,89 @@ label {
 }
 .form-control {
   font-size: 20px;
-  width: 200%;
-  background-color: rgb(229, 240, 245);
+  width: 160%;
 }
-
 .form-select{
   font-size: 20px;
-  width: 200%;
-  background-color: rgb(229, 240, 245);
+  width: 160%;
 }
-
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.tempHeading{
+  margin-bottom: 50px;
+  background-color: rgb(5, 5, 53);
+  padding: 20px;
+  color: white;
+}
+
+.tempform{
+  margin-top: 100px;
+  border: 1px solid black;
+  margin-left: 300px;
+  margin-right: 300px; 
+  margin-bottom: 100px;
+  background-color: white;
+}
+.rowDisplay{
+  display: inline-flex;
+  margin-bottom: 30px;
+}
+
+label{
+  margin-left: 27px;
+}
+.setLable1{
+  margin-left:27px;
+}
+.setLable2{
+  margin-left: 30px;
+}
+.textarea-control{
+  height: 100px;
+  width:822px;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.setLableMobile{
+  margin-left: 221px;
+}
+
+.btns{
+  border: 1px solid rgb(233, 230, 230);
+  margin: 30px;
+  padding: 30px;
+  background-color: rgb(251, 250, 250);
+}
+.btn_update{
+  margin-left: 950px;
+  background-color: rgb(21, 232, 21);
+  color: white;
+  border-radius: 6px;
+  border-color:rgb(78, 225, 78) ;
+  font-size: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.btn_cancel{
+  margin-left: 25px;
+  background-color:tomato;
+  color: white;
+  border-radius: 6px;
+  border-color:tomato ;
+  font-size: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
